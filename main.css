@@ -31,7 +31,7 @@ header nav a {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
@@ -40,6 +40,7 @@ header nav a {
 }
 header .container,
 section .container {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,9 +77,19 @@ h2 {
     font-style: italic;
 }
 
+.produtos img {
+    width: 100%; 
+    object-fit: cover;
+}
+
+.produto {
+    width: calc(25% - 16px); 
+    margin: 8px;
+}
+
 .produtos {
+    max-width: 1024px;
     width: calc(100% - 16px);
-    max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 5%;
 }
@@ -182,7 +193,7 @@ h2 {
 }
 
 /* --ipad-- */
-@media screen and (min-width: 667px) and (max-width: 1180px) {
+@media screen and (min-width: 641px) and (max-width: 1023px) {
     
     .sobre {
         max-width: 90%;
